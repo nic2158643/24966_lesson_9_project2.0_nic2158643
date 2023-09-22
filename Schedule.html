@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        Course: CIS133DA
+        Section: #9999
+        Lesson: 9
+    -->
+    <title>Schedule an Appointment</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="description"
+        content="In this area, I'm trying to create tables and box elements that allow you to input information.">
+    <meta name="keywords"
+        content="table structure, spanning tables, form field, checkable items, box inputs, box spacing, bubble spots.">
+    <link rel="stylesheet" href="CSS/default_style.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Computer Systems Inc.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home.html">Home</a></li>
+                    <li><a href="#about.html">About</a></li>
+                    <li class="right"><a href="#contact.html" class="right">Book an Appointment</a></li>
+                    <li><a href="#service.html">Services</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Pricing List</h2>
+
+            <table>
+                <tr>
+                    <th>User Type</th>
+                    <th>Services</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td rowspan="7" colspan="1">Home & Business</td>
+                    <td>Data recovery & transfer</td>
+                    <td rowspan="2" colspan="1"> $40 fixed price</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="1" colspan="1" >Software installation</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="1" colspan="1">Computer Repair</td>
+                      <td rowspan ="2" colspan="1">$60 per hour + hardware cost</td>
+                      </tr>
+                  <tr>
+                      <td rowspan="1" colspan="1">PC Setup and connection</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="1" colspan="1">Computer diagnostic</td>
+                      <td rowspan="2" colspan="1">$60 per hour</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="1" colspan="1">Wireless/Wired Network Setup</td>
+                  </tr>
+                  
+                    <td rowspan="1" colspan="1">Memory (RAM) upgrade</td>
+                    <td rowspan="1" colspan="1">$90 fixed price</td>
+                  <tr>
+                    <td rowspan="3" colspan="1">Business</td>
+                    <td>24/7 Support Hotline</td>
+                    <td rowspan="1" colspan="1">Starting at $300 per month</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="1" colspan="1">Web Development</td>
+                    <td>Starting at $400</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="1" colspan="1">Monthly software maintenance</td>
+                    <td rowspan="1" colspan="1">Starting at $40 per hour</td>
+                  </tr>
+
+</table>
+            <h3>Project Request Form</h3>
+            <p>Computer Systems Inc. can email or call you today to schedule an appointment or project request. Submit
+                the following form and we will get back to you promptly.</p>
+            <form action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx" method="post">
+                <label>First name: <input type="text" name="firstname"></label><br> <label>Last name: <input type="text"
+                        name="lastname"></label><br> <label>Email Address: <input id="email" name="UserEmail"></label><br>
+                <label>Phone Number: <input type="text" name="phonenumber"></label>
+
+
+                <p>How would you prefer we get back to you?</p>
+                <input type="checkbox" name="Phone" value="Phone" id="Phone">
+                <label for="Phone">Phone</label>
+                <input type="checkbox" name="Email" value="Email" id="Email">
+                <label for="Email">Email</label>
+
+                <p>Are you requesting for your home or business?</p>
+                <label> <input type="radio" name="location" value="Home"> Individual/Home</label>
+                <label> <input type="radio" name="location" value="Business"> Business</label><br>
+
+                <p>Additional Comments:</p>
+                <label for="comments"></label>
+                <textarea rows="9" cols="50" name="comments" id="comments"> </textarea><br>
+                <button type="submit">Submit the form</button>
+                <button type="reset">Reset the form</button>
+            </form>
+        </main>
+
+
+        <footer>
+            <p><small>Photo by <a
+                        href="https://unsplash.com/@clintbustrillos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint
+                        Bustrillos</a><br>Copyright by NIC2158643 &copy; 2023</small></p>
+        </footer>
+    </div>
+</body>
+
+</html>
